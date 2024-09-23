@@ -1,0 +1,132 @@
+.logo {
+    max-width: 128px;
+}
+
+.primary-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem clamp(1rem, 5vw, 2rem);
+    border-bottom: .15rem solid hsl( var(--clr-white) / .1);
+}
+
+.primary-navigation {
+    --underline-gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user,
+.shop-cart{
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.underline-indicators > *:nth-child(-n+5) {
+    cursor: pointer;
+    padding: var(--underline-gap, .5rem) 0;
+    border: 0;
+    background-color: transparent;
+    border-bottom: .2rem solid hsl( var(--clr-white) / 0);
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+    border-color: hsl( var(--clr-white) / .2);
+}
+
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
+    color: hsl( var(--clr-white) / 1);
+    border-color: hsl( var(--clr-white) / 1); 
+}
+
+@media(max-width: 50rem){
+    @supports (backdrop-filter: blur(1rem)){
+        .primary-navigation{
+            background: hsl( var(--clr-white) / .05 );
+            backdrop-filter: blur(1.5rem);
+        }
+    }
+
+    .primary-navigation{
+        --underline-gap: .5rem;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        list-style: none;
+        padding: min(20rem, 15vh) 2rem min(20rem, 15vh) 0;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0);
+    }
+
+    .primary-navigation li{
+        text-align: end;
+        min-width: 100%;
+    }
+
+    .underline-indicators > *:nth-child(-n+5) {
+        border-bottom: 0;
+        border-left: .2rem solid hsl( var(--clr-white) / 0);
+    }
+
+    .underline-indicators > *:hover,
+    .underline-indicators > *:focus {
+        border-color: hsl( var(--clr-white) / .2);
+    }
+
+    .underline-indicators > .active,
+    .underline-indicators > [aria-selected="true"] {
+        color: hsl( var(--clr-white) / 1);
+        border-color: hsl( var(--clr-white) / 1); 
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: 2rem;
+        background: transparent;
+        background-image: url(../images/botao-hamburguer.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 2.6rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url(../images/botao-fechar.png);
+    }
+
+    .mobile-nav-toggle:focus-visible {
+        outline: 5px solid hsl( var(--clr-white) );
+        outline-offset: 5px;
+    }
+}
+
+@media(min-width: 35rem) {
+    .logo{
+        max-width: 156px;
+    }
+}
+
+@media(min-width: 45rem) {
+    
+}
