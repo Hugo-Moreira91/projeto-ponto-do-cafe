@@ -1,0 +1,6 @@
+#home{
+    background-image: url(../images/home-img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

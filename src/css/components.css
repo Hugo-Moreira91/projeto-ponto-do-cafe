@@ -7,9 +7,11 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 500;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem clamp(1rem, 5vw, 2rem);
+    background-color: hsl( var(--clr-dark) / 1);
     border-bottom: .15rem solid hsl( var(--clr-white) / .1);
 }
 
@@ -48,6 +50,20 @@
 .underline-indicators > [aria-selected="true"] {
     color: hsl( var(--clr-white) / 1);
     border-color: hsl( var(--clr-white) / 1); 
+}
+
+.btn{
+    font-weight: 600;
+    padding: .5rem 1rem;
+    background-color: hsl( var(--clr-gold) / .85);
+    color: hsl( var(--clr-dark) / 1);
+    transition: 250ms ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: hsl( var(--clr-brown) / .85);
+    color: hsl( var(--clr-white) / 1);
 }
 
 @media(max-width: 50rem){

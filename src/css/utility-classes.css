@@ -46,6 +46,32 @@
     transform: translate(1.5%, 8%);
 }
 
+.animation-title {
+    animation: toRight 4s ease-out;
+}
+
+.animation-text {
+    opacity: 0;
+    animation: appear 4s linear 4s forwards;
+}
+
+@keyframes toRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
 /* colors */
 
 .bg-dark { background-color: hsl( var(--clr-dark) ); }
@@ -54,6 +80,8 @@
 
 .text-dark { color: hsl( var(--clr-dark) ); }
 .text-white { color: hsl( var(--clr-white) ); }
+.text-brown { color: hsl( var(--clr-brown) ); }
+.text-gold { color: hsl( var(--clr-gold) ); }
 
 /* typography */
 
@@ -61,7 +89,8 @@
 .ff-sans-cond { font-family: var(--ff-sans-cond); } 
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
 
-.letter-spacing { letter-spacing: 3px; } 
+.letter-spacing-1 { letter-spacing: 2px; }
+.letter-spacing-2 { letter-spacing: 3px; } 
 
 .uppercase { text-transform: uppercase; }
 
@@ -76,5 +105,5 @@
 .fs-800,
 .fs-700,
 .fs-600 {
-    line-height: 1.1;
+    line-height: .9;
 }

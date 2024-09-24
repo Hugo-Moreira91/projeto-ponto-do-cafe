@@ -25,6 +25,11 @@ a {
     text-decoration: none;
 }
 
+p{
+    font-weight: 100;
+    margin: 2rem 0;
+}
+
 img,
 picture {
     max-width: 100%;
