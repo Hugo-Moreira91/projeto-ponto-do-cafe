@@ -52,6 +52,10 @@
     border-color: hsl( var(--clr-white) / 1); 
 }
 
+.home-text {
+    margin: 2rem 0;
+}
+
 .btn{
     font-weight: 600;
     padding: .5rem 1rem;
@@ -64,6 +68,44 @@
 .btn:focus {
     background-color: hsl( var(--clr-brown) / .85);
     color: hsl( var(--clr-white) / 1);
+}
+
+.container--section {
+    background-color: hsl( var(--clr-white) / .1);
+}
+
+.about-us > *:not(:first-child),
+.commitment > *:not(:first-child) {
+    background-color: hsl( var(--clr-white) / .1);
+}
+
+.flex-container > h2 {
+    margin: 3rem 0;
+}
+
+.container-content {
+    padding: 1rem;
+    place-content: center;
+}
+
+.container-content > img {
+    width: 100%;
+}
+
+.container-text {
+    padding: 1rem 0;
+}
+
+.container-text > * {
+    line-height: 1.4;
+}
+
+.container-text > *:not(:first-child) {
+    margin-top: .5rem;
+}
+
+.grid-container--about > h2 {
+    margin: 3rem 0;
 }
 
 @media(max-width: 50rem){
@@ -144,5 +186,5 @@
 }
 
 @media(min-width: 45rem) {
-    
+
 }
