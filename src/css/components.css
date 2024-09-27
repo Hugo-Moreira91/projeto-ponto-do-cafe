@@ -2,6 +2,10 @@
     max-width: 128px;
 }
 
+.alternative-logo {
+    max-width: 212px;
+}
+
 .primary-header {
     position: fixed;
     top: 0;
@@ -75,7 +79,9 @@
 }
 
 .about-us > *:not(:first-child),
-.commitment > *:not(:first-child) {
+.commitment > *:not(:first-child),
+.value > *:not(:first-child),
+.crew > *:not(:first-child) {
     background-color: hsl( var(--clr-white) / .1);
 }
 
@@ -106,6 +112,14 @@
 
 .grid-container--about > h2 {
     margin: 3rem 0;
+}
+
+.footer {
+    width: 100%;
+    min-height: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    border-top: .15rem solid hsl( var(--clr-brown) / .35);
 }
 
 @media(max-width: 50rem){
@@ -182,6 +196,11 @@
 @media(min-width: 35rem) {
     .logo{
         max-width: 156px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 

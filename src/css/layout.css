@@ -2,7 +2,7 @@
     display: grid;
     padding-inline: 2rem;
     padding-top: 6.875rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     min-height: 100vh;
 }
 
@@ -21,7 +21,9 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 50rem) minmax(0, 1fr);
     grid-template-areas: 
         '. section-about-us .'
-        '. section-commitment .';
+        '. section-commitment .'
+        '. section-value .'
+        '. section-crew .';
 }
 
 .grid-container--about > .about-us {
@@ -30,6 +32,14 @@
 
 .grid-container--about > .commitment {
     grid-area: section-commitment;
+}
+
+.grid-container--about > .value {
+    grid-area: section-value;
+}
+
+.grid-container--about > .crew {
+    grid-area: section-crew;
 }
 
 .flex-container {
@@ -96,7 +106,7 @@
         grid-column: 2;
     }
 
-    .flex-container--about:not(:first-child) {
-        flex-direction: row;
+    .grid-container--about{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 35rem) minmax(0, 1fr);
     }
 }
