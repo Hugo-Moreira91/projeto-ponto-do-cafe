@@ -5,6 +5,7 @@
     --clr-brown: 30 55% 57%;
     --clr-gold: 51 100% 50%;
     --clr-green: 120 100% 30%;
+    --clr-darkgreen: 147 73% 40%;
 
     /* font-sizes */
     --fs-900: clamp(5rem, 8vw + 1rem , 9.375rem);

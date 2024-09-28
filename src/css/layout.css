@@ -42,46 +42,35 @@
     grid-area: section-crew;
 }
 
+.grid-container--contact{
+    grid-template-columns: minmax(0, 1fr) minmax(0, 35rem) minmax(0, 1fr);
+    grid-template-areas: 
+        '. title .'
+        '. form .'
+        '. whatsapp .';
+}
+
+.grid-container--contact > h1 {
+    grid-area: title;
+}
+
+.grid-container--contact > .contact-form {
+    grid-area: form;
+}
+
+.grid-container--contact > .whatsapp-container {
+    grid-area: whatsapp;
+}
+
+.grid-container--contact > * {
+    margin: 2rem 0;
+    place-self: center;
+}
+
 .flex-container {
     --gap: 0;
     flex-direction: column;
 }
-
-/* .grid-container--about > h1 {
-    grid-area: title;
-    place-self: center;
-}
-
-.grid-container--about > .about-us {
-    grid-area: section;
-    background-color: hsl( var(--clr-white) / .1);
-}
-
-.grid-container--about > h2 {
-    grid-area: title-2;
-    place-self: center;
-}
-
-.grid-container--about > .commitment{
-    grid-area: section-2;
-    background-color: hsl( var(--clr-white) / .1);
-}
-
-.grid-container--section {
-    display: grid;
-    grid-template-areas: 
-        'image'
-        'content';
-    height: fit-content;
-}
-
-.grid-container--section > .container-image {
-    grid-area: image;
-}
-
-.grid-container--section > .container-content {
-    grid-area: content;
-} */
 
 @media(min-width: 35rem){
     
