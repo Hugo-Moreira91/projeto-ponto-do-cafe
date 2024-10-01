@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=MonteCarlo&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/custom-properties.css">
+    <link rel="stylesheet" href="./src/css/utility-classes.css">
+    <link rel="stylesheet" href="./src/css/components.css">
+    <link rel="stylesheet" href="./src/css/layout.css">
+    <link rel="stylesheet" href="./src/css/page-specific-bg.css">
+
+    <title>Ponto do Café - Home</title>
+
+    <script src="./src/js/navigation.js" defer></script>
+    <script src="./src/js/tabs.js" defer></script>
+</head>
+
+<body class="home">
+    <a class="skip-to-content" href="#main">Ir para o conteúdo principal</a>
+    <header class="primary-header flex">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="./src/images/logo-principal.png" alt="Logo Ponto do Café">
+            </a>
+        </div>
+
+        <nav class="flex">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">Home</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="about.html">Sobre</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="menu.html">Menu</a></li>
+                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2"
+                        href="recipes.html">Receitas</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">Contato</a></li>
+                <li>
+                    <a href="#">
+                        <img class="user"
+                            src="https://img.icons8.com/external-febrian-hidayat-glyph-febrian-hidayat/ffffff/external-user-user-interface-febrian-hidayat-glyph-febrian-hidayat.png"
+                            alt="Usuário">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="shop-cart" src="https://img.icons8.com/glyph-neue/ffffff/shopping-cart.png"
+                            alt="Carrinho de compras">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex grid-container grid-container--recipes">
+        <h1 class="ff-handwriting fs-700">Receitas</h1>
+        <p>Prepare essas delícias sem sair de casa!</p>
+        <section class="box-presentation-recipe">
+            <img class="recipe-image" src="./src/images/ice-coffee.jpg" alt="Drink gelado de café com doce de leite">
+            <h2 class="ff-sans-normal fs-500 name-recipe">Drink gelado de café com doce de leite</h2>
+            <p class="ff-sans-cond fs-400 author-recipe">Feito por: <span class="name-author">Gabriel Gambaroto</span></p>
+            <button class="flex ff-sans-cond letter-spacing-1 uppercase btn-recipe" role="tab" aria-controls="ice-coffee-recipe">
+                Ver receita
+                <img class="arrow-image" src="./src/images/seta-para-baixo.png" alt="Seta apontando para baixo">
+            </button>
+        </section>
+        <article hidden id="ice-coffee-recipe" class="box-recipe">
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Ingredientes:</h3>
+            <ul>
+                <li class="ff-sans-normal">2 colheres de sopa de leite condensado</li>
+                <li class="ff-sans-normal">10 cubos de gelo</li>
+                <li class="ff-sans-normal">30g de café de sua preferência</li>
+                <li class="ff-sans-normal">200ml de água quente (não deixar ferver)</li>
+                <li class="ff-sans-normal">½ xícara de chá de chantilly</li>
+                <li class="ff-sans-normal">5 colheres de sopa de doce de leite</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Modo de preparo:</h3>
+            <p>
+                Primeiramente, coloque o leite condensado no fundo da taça e acrescente os cubos de gelo. Em seguida,
+                posicione o filtro em cima da taça para coar o café em cima do gelo. A ideia é dar um choque térmico no café, deixando a bebida com um sabor mais suave.
+            </p>
+            <p>
+                Depois, em uma caneca ou copo, misture o chantilly com o doce de leite. Mexa bastante até incorporar.
+                Por fim, adicione a mistura do chantilly com doce de leite na taça. Para completar, mexa todos os
+                ingredientes.
+            </p>
+            <p>
+                Agora é só desfrutar do seu drink gelado de café com doce de leite!
+            </p>
+        </article>
+
+        <section class="box-presentation-recipe">
+            <img class="recipe-image" src="./src/images/roulade-coffee-and-chocolate.jpg" alt="Rocambole de café e chocolate">
+            <h2 class="ff-sans-normal fs-500 name-recipe">Rocambole de café e chocolate</h2>
+            <p class="ff-sans-cond fs-400 author-recipe">Feito por: <span class="name-author">SC Hoje News</span></p>
+            <button class="flex ff-sans-cond letter-spacing-1 uppercase btn-recipe" role="tab" aria-controls="roulade-coffee-recipe">
+                Ver receita
+                <img class="arrow-image" src="./src/images/seta-para-baixo.png" alt="Seta apontando para baixo">
+            </button>
+        </section>
+        <article hidden id="roulade-coffee-recipe" class="box-recipe">
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Ingredientes:</h3>
+            <ul>
+                <li class="ff-sans-normal">4 ovos</li>
+                <li class="ff-sans-normal">1 xícara de açúcar</li>
+                <li class="ff-sans-normal">1 xícara de farinha de trigo</li>
+                <li class="ff-sans-normal">½ xícara de chocolate em pó</li>
+                <li class="ff-sans-normal">1 colher de sopa de café solúvel</li>
+                <li class="ff-sans-normal">½ xícara de água</li>
+                <li class="ff-sans-normal">1 colher de sopa de fermento em pó</li>
+                <li class="ff-sans-normal">1 pitada de sal</li>
+                <li class="ff-sans-normal">Manteiga para untar</li>
+                <li class="ff-sans-normal">Açúcar de confeiteiro para decorar (opcional)</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Modo de preparo:</h3>
+            <p>
+                Primeiramente, pré-aqueça o forno a 180°C e unte uma forma retangular com manteiga.
+            </p>
+            <p>
+                Depois, em uma tigela misture os ingredientes secos, como a farinha de trigo, o chocolate em pó e o fermento em pó.
+            </p>
+            <p>
+                Em outra tigela, bata os ovos com o açúcar até obter uma mistura homogênea e clara.
+            </p>
+            <p>
+                Na sequência, adicione a mistura de farinha aos poucos na mistura de ovos e açúcar, mexendo delicadamente.
+            </p>
+            <p>
+                Em uma xícara, dissolva o café solúvel na água quente e adicione à massa. Misture bem.
+            </p>
+            <p>
+                Adicione uma pitada de sal e misture novamente. Após, despeje toda a massa em uma forma untada e espalhe bem.
+            </p>
+            <p>
+                Leve ao forno por cerca de 15 minutos. Passado esse tempo, retire do forno e coloque a massa em cima de um pano de prato úmido.
+            </p>
+            <p>
+                Logo, enrole a massa com o pano de prato, ainda quente. E, depois, deixe esfriar.
+            </p>
+            <p>
+                Desenrole a massa e espalhe o recheio de sua preferência.
+            </p>
+            <p>
+                Logo, enrole novamente com a ajuda do pano de prato. Polvilhe açúcar de confeiteiro por cima e sirva.
+            </p>
+            <p>
+                Por fim, é só aproveitar essa deliciosa sobremesa com um toque de café!
+            </p>
+        </article>
+
+        <section class="box-presentation-recipe">
+            <img class="recipe-image" src="./src/images/cappuccino-pave.jpg" alt="Pavê de cappuccino">
+            <h2 class="ff-sans-normal fs-500 name-recipe">Pavê de cappuccino</h2>
+            <p class="ff-sans-cond fs-400 author-recipe">Feito por: <span class="name-author">Café Jaguari</span></p>
+            <button class="flex ff-sans-cond letter-spacing-1 uppercase btn-recipe" role="tab" aria-controls="cappuccino-pave-recipe">
+                Ver receita
+                <img class="arrow-image" src="./src/images/seta-para-baixo.png" alt="Seta apontando para baixo">
+            </button>
+        </section>
+        <article hidden id="cappuccino-pave-recipe" class="box-recipe">
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Ingredientes:</h3>
+            <ul>
+                <li class="ff-sans-normal">16 biscoitos champanhe</li>
+                <li class="ff-sans-normal">2 colheres (sopa) de cappuccino, dissolvido em 3 colheres (sopa) de água quente</li>
+                <li class="ff-sans-normal">1 colher (chá) de extrato de baunilha</li>
+                <li class="ff-sans-normal">Um copo (250ml) de creme de leite fresco</li>
+                <li class="ff-sans-normal">150g de chocolate derretido para a cobertura</li>
+                <li class="ff-sans-normal">Uma colher (sopa) de açúcar de confeiteiro</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Calda para o biscoito:</h3>
+            <ul>
+                <li class="ff-sans-normal">4 colheres (sopa) de cappuccino</li>
+                <li class="ff-sans-normal">200ml de água quente filtrada</li>
+                <li class="ff-sans-normal">Uma colher (sopa) de conhaque</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Modo de preparo:</h3>
+            <p>
+                Primeiramente, misture o creme de leite, o cappuccino e o açúcar. Em seguida adicione a baunilha.
+            </p>
+            <p>
+                Para a calda, misture bem os ingredientes.
+            </p>
+            <p>
+                Do mesmo modo, coloque metade dos biscoitos champanhe em uma travessa e despeje metade da calda sobre eles. Depois, coloque a mistura do creme de leite por cima.
+            </p>
+            <p>
+                Nesse ínterim, acrescente outra camada de biscoito champanhe. Por cima, coloque o restante da calda e da mistura do creme de leite.
+            </p>
+            <p>
+                Por fim, despeje o chocolate derretido por cima do pavê e leve à geladeira até a hora de servir.
+            </p>
+        </article>
+
+        <section class="box-presentation-recipe">
+            <img class="recipe-image" src="./src/images/milk-shake-coffee.jpg" alt="Milk shake de café">
+            <h2 class="ff-sans-normal fs-500 name-recipe">Milk shake de café</h2>
+            <p class="ff-sans-cond fs-400 author-recipe">Feito por: <span class="name-author">Café Evolutto</span></p>
+            <button class="flex ff-sans-cond letter-spacing-1 uppercase btn-recipe" role="tab" aria-controls="milk-shake-coffee-recipe">
+                Ver receita
+                <img class="arrow-image" src="./src/images/seta-para-baixo.png" alt="Seta apontando para baixo">
+            </button>
+        </section>
+        <article hidden id="milk-shake-coffee-recipe" class="box-recipe">
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Ingredientes:</h3>
+            <ul>
+                <li class="ff-sans-normal">3 bolas de sorvete de creme</li>
+                <li class="ff-sans-normal">120ml de leite</li>
+                <li class="ff-sans-normal">2 xícaras de café de sua preferência, já coado</li>
+                <li class="ff-sans-normal">3 paçocas</li>
+                <li class="ff-sans-normal">Calda de chocolate a gosto</li>
+                <li class="ff-sans-normal">Chantilly e raspas de chocolate para decorar</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Modo de preparo:</h3>
+            <p>
+                Em um liquidificador, coloque as bolas de sorvete, o leite, as paçocas e o café já coado. Bata tudo. 
+            </p>
+            <p>
+                Em um copo ou taça, decore com a calda de chocolate.
+            </p>
+            <p>
+                Despeje o conteúdo do liquidificador no copo ou taça.
+            </p>
+            <p>
+                Por fim, jogue o chantilly e as raspas de chocolate de sua preferência, dando um toque a mais. Se preferir, adicione também farelo de paçoca por cima.
+            </p>
+            <p>
+                Agora é só aproveitar essa bebida deliciosa!
+            </p>
+        </article>
+
+        <section class="box-presentation-recipe">
+            <img class="recipe-image" src="./src/images/coffee-cake.jpg" alt="Bolo de café">
+            <h2 class="ff-sans-normal fs-500 name-recipe">Bolo de café sem glúten e sem lactose</h2>
+            <p class="ff-sans-cond fs-400 author-recipe">Feito por: <span class="name-author">Jê Viecili</span></p>
+            <button class="flex ff-sans-cond letter-spacing-1 uppercase btn-recipe" role="tab" aria-controls="coffee-cake-recipe">
+                Ver receita
+                <img class="arrow-image" src="./src/images/seta-para-baixo.png" alt="Seta apontando para baixo">
+            </button>
+        </section>
+        <article hidden id="coffee-cake-recipe" class="box-recipe">
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Ingredientes:</h3>
+            <ul>
+                <li class="ff-sans-normal">1 ovo</li>
+                <li class="ff-sans-normal">70g de açúcar mascavo</li>
+                <li class="ff-sans-normal">60g de óleo</li>
+                <li class="ff-sans-normal">60g de café forte, a sua escolha</li>
+                <li class="ff-sans-normal">10g de cacau em pó</li>
+                <li class="ff-sans-normal">40g de farinha de amêndoas</li>
+                <li class="ff-sans-normal">30g de farinha de arroz</li>
+                <li class="ff-sans-normal">40g de fécula de mandioca</li>
+                <li class="ff-sans-normal">Sal a gosto</li>
+                <li class="ff-sans-normal">1 colher de chá de fermento químico em pó</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Cobertura:</h3>
+            <ul>
+                <li class="ff-sans-normal">70g de açúcar de confeiteiro</li>
+                <li class="ff-sans-normal">20ml de café passado</li>
+                <li class="ff-sans-normal">Amêndoas laminadas a gosto, para decorar</li>
+            </ul>
+            <h3 class="ff-sans-normal fs-400 uppercase letter-spacing-1">Modo de preparo:</h3>
+            <p>
+                Em uma vasilha, coloque o ovo, o açúcar, o óleo, o café passado e bata bem. 
+            </p>
+            <p>
+                Adicione o cacau, as farinhas e misture até ficar homogêneo.
+            </p>
+            <p>
+                Acrescente o sal, o fermento e misture delicadamente.
+            </p>
+            <p>
+                Leve para assar em forno preaquecido a 180 °C por meia hora.
+            </p>
+            <p>
+                Em uma vasilha, coloque o açúcar de confeiteiro, o café passado e misture bem.
+            </p>
+            <p>
+                Assim que tudo estiver frio, coloque a cobertura por cima do bolo e finalize com as amêndoas laminadas.
+            </p>
+            <p>
+                Agora é só servir. Bom apetite!
+            </p>
+        </article>
+
+        <p class="flex send-recipe-text">
+            Quer enviar uma receita?
+            <a href="#" class="btn">Enviar receita</a>
+        </p>
+    </main>
+
+    <footer class="flex footer">
+        <a href="index.html">
+            <img class="alternative-logo" src="./src/images/logo-alternativa.png" alt="Logo alternativa Ponto do Café">
+        </a>
+        <p class="flex footer-text ff-sans-cond letter-spacing-1">&copy; Copyright - Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

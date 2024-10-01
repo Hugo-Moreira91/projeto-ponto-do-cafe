@@ -42,6 +42,14 @@
     grid-area: section-crew;
 }
 
+.grid-container--recipes {
+    --gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: min-content;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .grid-container--contact{
     grid-template-columns: minmax(0, 1fr) minmax(0, 35rem) minmax(0, 1fr);
     grid-template-areas: 
