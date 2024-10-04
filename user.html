@@ -62,6 +62,59 @@
                 <input type="text" name="full-name" id="full-name" placeholder="Nome completo" required>
                 <label for="new-user-email">E-mail *</label>
                 <input type="email" name="new-user-email" id="new-user-email" placeholder="E-mail" required>
+                <label for="new-user-address">Endereço *</label>
+                <input type="text" name="new-user-address" id="new-user-address" placeholder="Rua/Avenida/Logradouro" required>
+                <label for="new-user-number">Número *</label>
+                <input type="text" name="new-user-number" id="new-user-number" placeholder="Número" pattern="\d+" title="Somente números são permitidos" required>
+                <label for="new-user-neighborhood">Bairro *</label>
+                <input type="text" name="new-user-neighborhood" id="new-user-neighborhood" placeholder="Bairro" required>
+                <label for="new-user-city">Cidade *</label>
+                <input type="text" name="new-user-city" id="new-user-city" placeholder="Cidade" required>
+                <label for="new-user-state">Estado/Distrito *</label>
+                <select name="new-user-state" id="new-user-state" required>
+                    <option value="" disabled selected>Selecione o estado/distrito</option>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                      </optgroup>
+                  
+                      <optgroup label="Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                      </optgroup>
+                  
+                      <optgroup label="Centro-Oeste">
+                        <option value="DF">Distrito Federal</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                      </optgroup>
+                  
+                      <optgroup label="Sudeste">
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                      </optgroup>
+                  
+                      <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                      </optgroup>
+                </select>
                 <label for="new-user-name">Nome de usuário *</label>
                 <input type="text" name="new-user-name" id="new-user-name" placeholder="Nome de usuário" required>
                 <label for="new-user-password">Senha *</label>
