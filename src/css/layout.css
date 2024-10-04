@@ -81,7 +81,9 @@
 }
 
 @media(min-width: 35rem){
-    
+    .grid-container {
+        padding-top: 7.715rem;
+    }
 }
 
 @media(min-width: 45rem) {

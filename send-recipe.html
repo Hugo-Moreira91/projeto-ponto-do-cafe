@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="./src/css/layout.css">
     <link rel="stylesheet" href="./src/css/page-specific-bg.css">
 
-    <title>Ponto do Café - Contato</title>
+    <title>Ponto do Café - Envio de receita</title>
 
     <script src="./src/js/navigation.js" defer></script>
+    <script src="./src/js/forms.js" defer></script>
 </head>
 <body class="home">
     <a class="skip-to-content" href="#main">Ir para o conteúdo principal</a>
@@ -38,8 +39,8 @@
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">Home</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="about.html">Sobre</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="menu.html">Menu</a></li>
-                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="recipes.html">Receitas</a></li>
-                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">Contato</a></li>
+                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="recipes.html">Receitas</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">Contato</a></li>
                 <li>
                     <a href="user.html">
                         <img class="user" src="https://img.icons8.com/external-febrian-hidayat-glyph-febrian-hidayat/ffffff/external-user-user-interface-febrian-hidayat-glyph-febrian-hidayat.png" alt="Usuário"/>
@@ -55,35 +56,36 @@
     </header>
 
     <main class="grid-container grid-container--contact">
-        <h1 class="ff-handwriting fs-700">Contato</h1>
-        <form id="contact-form" class="ff-sans-cond fs-500 contact-form" action="#" method="post" autocomplete="on">
-            <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
-            <label for="name">Nome *</label>
-            <input type="text" name="name" id="name" placeholder="Seu nome" required>
-            <label for="email">E-mail *</label>
-            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
-            <label for="email-recipient">E-mail de suporte</label>
-            <input type="email" name="email-recipient" id="email-recipient" value="suporte.pontodocafe@gmail.com" readonly>
-            <label for="subject">Assunto *</label>
-            <select name="subject" id="subject" required>
-                <option value="" disabled selected>Selecione o assunto</option>
-                <option value="sugestao">Sugestão</option>
-                <option value="reclamacao">Reclamação</option>
-                <option value="informacao">Informação</option>
-                <option value="compra">Compra</option>
-                <option value="outro">Outro</option>
-            </select>
-            <label for="message">Mensagem *</label>
-            <textarea name="message" id="message" placeholder="Digite sua mensagem aqui" rows="10" required></textarea>
-            <p class="fs-400"><i>* Campos obrigatórios</i></p>
-            <button type="submit" class="btn uppercase">Enviar</button>
-        </form>
+        <h1 class="ff-handwriting fs-700">Envie sua receita</h1>
+        <form id="recipe-form" class="ff-sans-cond fs-500 contact-form" action="#" method="post" autocomplete="on">
+            <label for="name-recipe">Nome da receita *</label>
+            <input type="text" name="name-recipe" id="name-recipe" placeholder="Nome da receita" required>
+            <label for="email">Feito por *</label>
+            <input type="text" name="make-by" id="make-by" placeholder="Feito por" required>
+            <label for="main-ingredients">Ingredientes *</label>
+            <textarea name="main-ingredients" id="main-ingredients" placeholder="Insira aqui os ingredientes principais da sua receita" rows="10" required></textarea>
+            <label for="additional-ingredients">Possui cobertura ou calda?</label>
+            <div class="flex radio-container">
+                <label for="yes">Sim</label>
+                <input type="radio" name="additional-ingredients" id="yes" value="yes" onclick="showTextarea()">
+                
+                <label for="no">Não</label>
+                <input type="radio" name="additional-ingredients" id="no" value="no" checked onclick="hideTextarea()">
+            </div>
 
-        <section class="flex whatsapp-container">
-            <img src="./src/images/whatsapp-icone.png" alt="Ícone do Whatsapp">
-            <!-- alterar o número do whatsapp -->
-            <a class="ff-sans-cond letter-spacing-1 whatsapp-link" href="https://wa.me/5531999999999?text=Olá,%20seja%20muito%20bem-vindo(a)%20a%20cafeteria%20Ponto%20do%20Café.%20Como%20podemos%20te%20ajudar?" target="_blank">Iniciar conversa</a>
-        </section>
+            <div hidden id="additional-ingredients-container-text">
+                <label for="topping-syrup-ingredients">Igredientes cobertura/calda</label>
+                <textarea name="topping-syrup-ingredients" id="topping-syrup-ingredients" rows="5" placeholder="Insira aqui os ingredientes da cobertura ou calda"></textarea>
+            </div>
+
+            <div>
+                <label for="image-recipe">Possui uma foto da receita finalizada?</label>
+                <input type="file" name="image-recipe" id="image-recipe" class="ff-sans-cond fs-500" accept="image/png, image/jpeg, image/jpg">
+                <p class="ff-sans-cond fs-300">(Formatos permitidos: PNG, JPEG e JPG)</p>
+            </div>
+            <p class="fs-400"><i>* Campos obrigatórios</i></p>
+            <button type="submit" class="btn uppercase">Enviar Receita</button>
+        </form>
     </main>
 
     <footer class="flex footer">

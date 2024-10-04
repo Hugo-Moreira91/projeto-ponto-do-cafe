@@ -39,8 +39,8 @@
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="about.html">Sobre</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="menu.html">Menu</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="recipes.html">Receitas</a></li>
-                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">Contato</a></li>
-                <li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">Contato</a></li>
+                <li class="active-icon">
                     <a href="user.html">
                         <img class="user" src="https://img.icons8.com/external-febrian-hidayat-glyph-febrian-hidayat/ffffff/external-user-user-interface-febrian-hidayat-glyph-febrian-hidayat.png" alt="Usuário"/>
                     </a>
@@ -54,35 +54,26 @@
         </nav>
     </header>
 
-    <main class="grid-container grid-container--contact">
-        <h1 class="ff-handwriting fs-700">Contato</h1>
-        <form id="contact-form" class="ff-sans-cond fs-500 contact-form" action="#" method="post" autocomplete="on">
-            <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
-            <label for="name">Nome *</label>
-            <input type="text" name="name" id="name" placeholder="Seu nome" required>
-            <label for="email">E-mail *</label>
-            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
-            <label for="email-recipient">E-mail de suporte</label>
-            <input type="email" name="email-recipient" id="email-recipient" value="suporte.pontodocafe@gmail.com" readonly>
-            <label for="subject">Assunto *</label>
-            <select name="subject" id="subject" required>
-                <option value="" disabled selected>Selecione o assunto</option>
-                <option value="sugestao">Sugestão</option>
-                <option value="reclamacao">Reclamação</option>
-                <option value="informacao">Informação</option>
-                <option value="compra">Compra</option>
-                <option value="outro">Outro</option>
-            </select>
-            <label for="message">Mensagem *</label>
-            <textarea name="message" id="message" placeholder="Digite sua mensagem aqui" rows="10" required></textarea>
-            <p class="fs-400"><i>* Campos obrigatórios</i></p>
-            <button type="submit" class="btn uppercase">Enviar</button>
-        </form>
+    <main class="grid-container grid-container--login">
+        <section class="new-user-container">
+            <p class="ff-sans-normal fs-400">Não possui cadastro?<br>Preencha com seus dados abaixo para criá-lo.</p>
+            <form id="new-user-form" class="ff-sans-cond fs-500 contact-form" action="#" method="post" autocomplete="on">
+                <label for="new-user-full-name">Nome Completo *</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Nome completo" required>
+                <label for="new-user-email">E-mail *</label>
+                <input type="email" name="new-user-email" id="new-user-email" placeholder="E-mail" required>
+                <label for="new-user-name">Nome de usuário *</label>
+                <input type="text" name="new-user-name" id="new-user-name" placeholder="Nome de usuário" required>
+                <label for="new-user-password">Senha *</label>
+                <input type="password" name="new-user-password" id="new-user-password" minlength="5" required>
+                <p class="ff-sans-cond fs-300">(Mín: 5 caracteres)</p>
+                <p class="fs-400"><i>* Campos obrigatórios</i></p>
+                <button type="submit" class="btn uppercase">Cadastrar</button>
+            </form>
+        </section>
 
-        <section class="flex whatsapp-container">
-            <img src="./src/images/whatsapp-icone.png" alt="Ícone do Whatsapp">
-            <!-- alterar o número do whatsapp -->
-            <a class="ff-sans-cond letter-spacing-1 whatsapp-link" href="https://wa.me/5531999999999?text=Olá,%20seja%20muito%20bem-vindo(a)%20a%20cafeteria%20Ponto%20do%20Café.%20Como%20podemos%20te%20ajudar?" target="_blank">Iniciar conversa</a>
+        <section class="login-container">
+            <p>Caso possua cadastro, faça o login:</p>
         </section>
     </main>
 
@@ -92,6 +83,5 @@
         </a>
         <p class="flex footer-text ff-sans-cond letter-spacing-1">&copy; Copyright - Todos os direitos reservados</p>
     </footer>
-
 </body>
 </html>

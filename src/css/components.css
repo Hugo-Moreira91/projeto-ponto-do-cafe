@@ -33,6 +33,13 @@
     height: 40px;
 }
 
+.active-icon > a .user,
+.active-icon > a .shop-cart {
+    border: 2px solid hsl( var(--clr-white) );
+    border-radius: 50%;
+    padding: .1rem;
+}
+
 .mobile-nav-toggle {
     display: none;
     cursor: pointer;
@@ -195,6 +202,7 @@
 }
 
 .contact-form {
+    width: 100%;
     padding: .8rem;
     border: .1rem solid hsl( var(--clr-gold) / .5);
     background-color: hsl( var(--clr-white) / .1);
@@ -204,10 +212,19 @@
     margin-top: .3rem;
 }
 
+.contact-form > *:last-child {
+    margin-top: 1.5rem;
+}
+
 .contact-form > input,
 .contact-form > select,
 .contact-form > textarea {
     padding: .15rem .35rem;
+}
+
+.contact-form > input[type="file"] {
+    padding: 0;
+    cursor: pointer;
 }
 
 .contact-form > textarea {
@@ -231,6 +248,21 @@
 .whatsapp-link:hover,
 .whatsapp-link:focus {
     background-color: hsl( var(--clr-green) / 1);
+}
+
+#recipe-form .radio-container {
+    --gap: 0;
+    width: 10rem;
+    align-items: center;
+    justify-content: start;
+}
+
+#additional-ingredients-container-text > textarea {
+    padding: .15rem .35rem;
+}
+
+#recipe-form > p {
+    margin-top: 3rem;
 }
 
 .footer {
@@ -319,6 +351,14 @@
 
     .box-recipe {
         padding: 1rem 1.5rem;
+    }
+
+    #recipe-form .radio-container {
+        width: 12rem;
+    }
+
+    .contact-form > button {
+        max-width: 12.5rem;
     }
 
     .footer {
