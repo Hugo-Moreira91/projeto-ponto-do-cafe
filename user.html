@@ -56,7 +56,8 @@
 
     <main class="grid-container grid-container--login">
         <section class="new-user-container">
-            <p class="ff-sans-normal fs-400">Não possui cadastro?<br>Preencha com seus dados abaixo para criá-lo.</p>
+            <p class="ff-sans-normal fs-400">Não possui cadastro?<br>Preencha abaixo com seus dados para criá-lo.</p>
+
             <form id="new-user-form" class="ff-sans-cond fs-500 contact-form" action="#" method="post" autocomplete="on">
                 <label for="new-user-full-name">Nome Completo *</label>
                 <input type="text" name="full-name" id="full-name" placeholder="Nome completo" required>
@@ -118,15 +119,25 @@
                 <label for="new-user-name">Nome de usuário *</label>
                 <input type="text" name="new-user-name" id="new-user-name" placeholder="Nome de usuário" required>
                 <label for="new-user-password">Senha *</label>
-                <input type="password" name="new-user-password" id="new-user-password" minlength="5" required>
+                <input type="password" name="new-user-password" id="new-user-password" placeholder="Senha" minlength="5" required>
                 <p class="ff-sans-cond fs-300">(Mín: 5 caracteres)</p>
                 <p class="fs-400"><i>* Campos obrigatórios</i></p>
                 <button type="submit" class="btn uppercase">Cadastrar</button>
             </form>
         </section>
 
+        <hr>
+
         <section class="login-container">
             <p>Caso possua cadastro, faça o login:</p>
+
+            <form id="login-user" class="ff-sans-cond fs-500 contact-form" action="#" method="post" autocomplete="on">
+                <label for="identifier">Nome de usuário ou e-mail</label>
+                <input type="text" name="identifier" id="identifier" placeholder="Nome de usuário ou e-mail" required>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Senha" minlength="5" required>
+                <button type="submit" class="btn uppercase">Entrar</button>
+            </form>
         </section>
     </main>
 

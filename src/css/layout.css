@@ -75,6 +75,28 @@
     place-self: center;
 }
 
+.grid-container--login {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 30rem) minmax(0, 1fr);
+    row-gap: 2rem;
+    grid-template-areas:
+        '. . .' 
+        '. new-user .'
+        '. line .'
+        '. login-user .';
+}
+
+.grid-container--login > .new-user-container {
+    grid-area: new-user;
+}
+
+.grid-container--login > hr {
+    grid-area: line;
+}
+
+.grid-container--login > .login-container {
+    grid-area: login-user;
+}
+
 .flex-container {
     --gap: 0;
     flex-direction: column;
@@ -107,5 +129,13 @@
 
     .grid-container--about{
         grid-template-columns: minmax(0, 1fr) minmax(0, 35rem) minmax(0, 1fr);
+    }
+
+    .grid-container--login {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 40rem) auto minmax(0, 25rem) minmax(0, 1fr);
+        column-gap: 2rem;
+        grid-template-areas:
+            '. . . . .' 
+            '. new-user line login-user .';
     }
 }

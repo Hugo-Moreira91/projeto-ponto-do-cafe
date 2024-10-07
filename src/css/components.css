@@ -265,6 +265,11 @@
     margin-top: 3rem;
 }
 
+.new-user-container > p,
+.login-container > p {
+    margin-bottom: 1rem;
+}
+
 .footer {
     width: 100%;
     min-height: 8rem;
