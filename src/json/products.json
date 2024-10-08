@@ -1,0 +1,92 @@
+{
+    "bebidas": [
+        {
+            "nome": "Café Expresso",
+            "preco": "5.00",
+            "descricao": "Um clássico café encorpado e intenso, preparado na hora.",
+            "imagem": "../images/cafe-expresso.png"
+        },
+        {
+            "nome": "Cappuccino",
+            "preco": "8.00",
+            "descricao": "Combinação perfeita de café, leite vaporizado e espuma cremosa.",
+            "imagem": "../images/cappuccino.png"
+        },
+        {
+            "nome": "Latte",
+            "preco": "9.00",
+            "descricao": "Leite vaporizado e uma dose de expresso, criando uma bebida suave e cremosa.",
+            "imagem": "../images/latte.png"
+        },
+        {
+            "nome": "Mocha",
+            "preco": "10.00",
+            "descricao": "Delicioso mix de café expresso, leite vaporizado e calda de chocolate, ideal para quem gosta de algo mais doce.",
+            "imagem": "../images/mocha.png"
+        },
+        {
+            "nome": "Café Gelado",
+            "preco": "7.00",
+            "descricao": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
+            "imagem": "../images/cafe-gelado.png"
+        }
+    ],
+    "bebidas_especiais": [
+        {
+            "nome": "Café Coado Especial (Método V60)",
+            "preco": "15.00",
+            "descricao": "Café coado artesanalmente com grãos selecionados de alta qualidade, proporcionando notas complexas e suaves ao paladar.",
+            "imagem": "../images/cafe-v60.png"
+        },
+        {
+            "nome": "Flat White",
+            "preco": "12.00",
+            "descricao": "Bebida refinada de origem australiana, com uma camada fina de leite vaporizado sobre uma dose dupla de café expresso.",
+            "imagem": "../images/flat-white.png"
+        },
+        {
+            "nome": "Affogato",
+            "preco": "18.00",
+            "descricao": "Sofisticada bebida que combina uma bola de sorvete de baunilha com uma dose de café expresso quente.",
+            "imagem": "../images/affogato.png"
+        },
+        {
+            "nome": "Cold Brew com Leite de Amêndoas",
+            "preco": "16.00",
+            "descricao": "Café preparado a frio por 24 horas, servido com gelo e leite de amêndoas, oferecendo um sabor suave e menos ácido.",
+            "imagem": "../images/cold-brew.png"
+        },
+        {
+            "nome": "Café com Laranja e Especiarias",
+            "preco": "17.00",
+            "descricao": "Café expresso combinado com suco de laranja fresco e um toque de especiarias, criando uma experiência exótica e refrescante.",
+            "imagem": "../images/cafe-com-laranja.png"
+        }
+    ],
+    "lanches": [
+        {
+            "nome": "Pão de Queijo",
+            "preco": "4.50",
+            "descricao": "Tradicional pão de queijo brasileiro, crocante por fora e macio por dentro.",
+            "imagem": "../images/pao-de-queijo.png"
+        },
+        {
+            "nome": "Croissant",
+            "preco": "8.50",
+            "descricao": "Massa folhada leve e crocante, ideal para acompanhar seu café.",
+            "imagem": "../images/croissant.png"
+        },
+        {
+            "nome": "Bolo de Cenoura com Cobertura de Chocolate (fatia)",
+            "preco": "6.00",
+            "descricao": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
+            "imagem": "../images/bolo-de-cenoura.png"
+        },
+        {
+            "nome": "Sanduíche Natural",
+            "preco": "12.00",
+            "descricao": "Sanduíche leve com frango desfiado, alface, tomate, cenoura ralada e uma pitada de maionese, servido no pão integral.",
+            "imagem": "../images/sanduiche-natural.png"
+        }
+    ]
+}
