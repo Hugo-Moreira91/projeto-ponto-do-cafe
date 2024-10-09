@@ -1,4 +1,30 @@
 {
+    "destaques": [
+        {
+            "nome": "Café Expresso",
+            "preco": "5.00",
+            "descricao": "Um clássico café encorpado e intenso, preparado na hora.",
+            "imagem": "../images/cafe-expresso.png"
+        },
+        {
+            "nome": "Café Gelado",
+            "preco": "7.00",
+            "descricao": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
+            "imagem": "../images/cafe-gelado.png"
+        },
+        {
+            "nome": "Sanduíche de Salmão Defumado",
+            "preco": "24.00",
+            "descricao": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
+            "imagem": "../images/sanduiche-de-salmao.png"
+        },
+        {
+            "nome": "Mousse de Chocolate Belga 70%",
+            "preco": "20.00",
+            "descricao": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
+            "imagem": "../images/mousse-chocolate-belga.png"
+        }
+    ],
     "bebidas": [
         {
             "nome": "Café Expresso",
@@ -29,9 +55,7 @@
             "preco": "7.00",
             "descricao": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
             "imagem": "../images/cafe-gelado.png"
-        }
-    ],
-    "bebidas_especiais": [
+        },
         {
             "nome": "Café Coado Especial (Método V60)",
             "preco": "15.00",
@@ -107,6 +131,48 @@
             "preco": "6.00",
             "descricao": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
             "imagem": "../images/bolo-de-cenoura.png"
+        },
+        {
+            "nome": "Cheesecake de Frutas Vermelhas",
+            "preco": "12.00",
+            "descricao": "Delicada torta de queijo com uma calda de frutas vermelhas.",
+            "imagem": "../images/cheesecake-frutas-vermelhas.png"
+        },
+        {
+            "nome": "Brownie de Chocolate",
+            "preco": "7.00",
+            "descricao": "Brownie denso e saboroso com pedaços de chocolate, crocante por fora e macio por dentro.",
+            "imagem": "../images/brownie-chocolate.png"
+        },
+        {
+            "nome": "Brownie de Café",
+            "preco": "9.00",
+            "descricao": "Versão alternativa do brownie tradicional.",
+            "imagem": "../images/brownie-cafe.png"
+        },
+        {
+            "nome": "Brigadeiro Tradicional (unidade)",
+            "preco": "2.50",
+            "descricao": "O famoso e tão amado brigadeiro.",
+            "imagem": "../images/brigadeiro-tradicional.png"
+        },
+        {
+            "nome": "Brigadeiro Gourmet (unidade)",
+            "preco": "4.00",
+            "descricao": "Doce de leite condensado e chocolate belga, uma versão mais sofisticada do tradicional brigadeiro brasileiro.",
+            "imagem": "../images/brigadeiro-gourmet.png"
+        },
+        {
+            "nome": "Mousse de Chocolate Belga 70%",
+            "preco": "20.00",
+            "descricao": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
+            "imagem": "../images/mousse-chocolate-belga.png"
+        },
+        {
+            "nome": "Profiteroles com Sorvete de Baunilha e Calda de Chocolate Amargo",
+            "preco": "25.00",
+            "descricao": "Massa choux recheada com sorvete de baunilha, coberta com uma generosa calda quente de chocolate amargo.",
+            "imagem": "../images/profilitores.png"
         }
     ]
 }

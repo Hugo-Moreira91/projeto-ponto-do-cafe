@@ -124,6 +124,56 @@
     margin: 3rem 0;
 }
 
+.submenu {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: .5rem 0;
+}
+
+.submenu > *{
+    color: hsl( var(--clr-white) / 1);
+    width: min-content;
+}
+
+.submenu-underline-indicators > *{
+    position: relative;
+    cursor: pointer;
+    padding: var(--underline-gap, .5rem) 0;
+    border: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.submenu-underline-indicators > *::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: .2rem;
+    background-color: hsl( var(--clr-white) / .2);
+    transition: width 400ms ease, left 400ms ease;
+}
+
+.submenu-underline-indicators > *:hover::before,
+.submenu-underline-indicators > *:focus::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.submenu-underline-indicators > .submenu-active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl( var(--clr-gold) / .65);
+}
+
 .box-presentation-recipe,
 .box-recipe {
     max-width: 45rem;
@@ -352,6 +402,11 @@
 @media(min-width: 35rem) {
     .logo{
         max-width: 156px;
+    }
+
+    .submenu {
+        gap: 5rem;
+        margin: 1rem auto;
     }
 
     .box-recipe {

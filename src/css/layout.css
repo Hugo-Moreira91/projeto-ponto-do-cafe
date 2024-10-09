@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     padding-top: 6.875rem;
     padding-bottom: 5rem;
     min-height: 100vh;
@@ -41,6 +41,10 @@
 .grid-container--about > .crew {
     grid-area: section-crew;
 }
+
+/* .grid-container--products {
+
+} */
 
 .grid-container--recipes {
     --gap: 1.5rem;
@@ -104,13 +108,14 @@
 
 @media(min-width: 35rem){
     .grid-container {
+        padding-inline: 2rem;
         padding-top: 7.715rem;
     }
 }
 
 @media(min-width: 45rem) {
     .grid-container {
-        padding-top: 8.125rem;
+        padding-top: 7.7rem;
     }
 
     .grid-container--home {
