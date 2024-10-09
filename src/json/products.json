@@ -77,16 +77,36 @@
             "imagem": "../images/croissant.png"
         },
         {
-            "nome": "Bolo de Cenoura com Cobertura de Chocolate (fatia)",
-            "preco": "6.00",
-            "descricao": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
-            "imagem": "../images/bolo-de-cenoura.png"
-        },
-        {
             "nome": "Sanduíche Natural",
             "preco": "12.00",
             "descricao": "Sanduíche leve com frango desfiado, alface, tomate, cenoura ralada e uma pitada de maionese, servido no pão integral.",
             "imagem": "../images/sanduiche-natural.png"
+        },
+        {
+            "nome": "Croissant com Amêndoas",
+            "preco": "14.00",
+            "descricao": "Massa folhada francesa recheada com creme de amêndoas e coberta com lâminas de amêndoas tostadas, uma verdadeira iguaria parisiense.",
+            "imagem": "../images/croissant-amendoas.png"
+        },
+        {
+            "nome": "Toast de Abacate com Ovo Poché",
+            "preco": "20.00",
+            "descricao": "Pão artesanal tostado, coberto com purê de abacate temperado e ovo poché, finalizado com pimenta-do-reino e azeite trufado.",
+            "imagem": "../images/avocado-toast.png"
+        },
+        {
+            "nome": "Sanduíche de Salmão Defumado",
+            "preco": "24.00",
+            "descricao": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
+            "imagem": "../images/sanduiche-de-salmao.png"
+        }
+    ],
+    "sobremesas": [
+        {
+            "nome": "Bolo de Cenoura com Cobertura de Chocolate (fatia)",
+            "preco": "6.00",
+            "descricao": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
+            "imagem": "../images/bolo-de-cenoura.png"
         }
     ]
 }
