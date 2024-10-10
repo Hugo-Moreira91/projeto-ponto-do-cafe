@@ -42,9 +42,21 @@
     grid-area: section-crew;
 }
 
-/* .grid-container--products {
+.grid-container--products {
+    grid-template-columns: minmax(0, 1fr) repeat(auto-fit, minmax(0, auto-fill)) minmax(0, 1fr);
+    grid-template-rows: min-content;
+    grid-template-areas: 
+        '. submenu .'
+        '. product-list .';
+}
 
-} */
+.grid-container--products > .submenu {
+    grid-area: submenu;
+}
+
+.grid-container--products > .products-list {
+    grid-area: product-list;
+}
 
 .grid-container--recipes {
     --gap: 1.5rem;
