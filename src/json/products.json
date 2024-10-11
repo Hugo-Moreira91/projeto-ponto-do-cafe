@@ -1,178 +1,178 @@
 {
-    "destaques": [
+    "highlights": [
         {
-            "nome": "Café Expresso",
-            "preco": "5.00",
-            "descricao": "Um clássico café encorpado e intenso, preparado na hora.",
-            "imagem": "../images/cafe-expresso.png"
+            "name": "Café Expresso",
+            "price": "5.00",
+            "description": "Um clássico café encorpado e intenso, preparado na hora.",
+            "image": "./src/images/cafe-expresso.png"
         },
         {
-            "nome": "Café Gelado",
-            "preco": "7.00",
-            "descricao": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
-            "imagem": "../images/cafe-gelado.png"
+            "name": "Café Gelado",
+            "price": "7.00",
+            "description": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
+            "image": "./src/images/cafe-gelado.png"
         },
         {
-            "nome": "Sanduíche de Salmão Defumado",
-            "preco": "24.00",
-            "descricao": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
-            "imagem": "../images/sanduiche-de-salmao.png"
+            "name": "Sanduíche de Salmão Defumado",
+            "price": "24.00",
+            "description": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
+            "image": "./src/images/sanduiche-de-salmao.png"
         },
         {
-            "nome": "Mousse de Chocolate Belga 70%",
-            "preco": "20.00",
-            "descricao": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
-            "imagem": "../images/mousse-chocolate-belga.png"
+            "name": "Mousse de Chocolate Belga 70%",
+            "price": "20.00",
+            "description": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
+            "image": "./src/images/mousse-chocolate-belga.png"
         }
     ],
-    "bebidas": [
+    "drinks": [
         {
-            "nome": "Café Expresso",
-            "preco": "5.00",
-            "descricao": "Um clássico café encorpado e intenso, preparado na hora.",
-            "imagem": "../images/cafe-expresso.png"
+            "name": "Café Expresso",
+            "price": "5.00",
+            "description": "Um clássico café encorpado e intenso, preparado na hora.",
+            "image": "./src/images/cafe-expresso.png"
         },
         {
-            "nome": "Cappuccino",
-            "preco": "8.00",
-            "descricao": "Combinação perfeita de café, leite vaporizado e espuma cremosa.",
-            "imagem": "../images/cappuccino.png"
+            "name": "Cappuccino",
+            "price": "8.00",
+            "description": "Combinação perfeita de café, leite vaporizado e espuma cremosa.",
+            "image": "./src/images/cappuccino.png"
         },
         {
-            "nome": "Latte",
-            "preco": "9.00",
-            "descricao": "Leite vaporizado e uma dose de expresso, criando uma bebida suave e cremosa.",
-            "imagem": "../images/latte.png"
+            "name": "Latte",
+            "price": "9.00",
+            "description": "Leite vaporizado e uma dose de expresso, criando uma bebida suave e cremosa.",
+            "image": "./src/images/latte.png"
         },
         {
-            "nome": "Mocha",
-            "preco": "10.00",
-            "descricao": "Delicioso mix de café expresso, leite vaporizado e calda de chocolate, ideal para quem gosta de algo mais doce.",
-            "imagem": "../images/mocha.png"
+            "name": "Mocha",
+            "price": "10.00",
+            "description": "Delicioso mix de café expresso, leite vaporizado e calda de chocolate, ideal para quem gosta de algo mais doce.",
+            "image": "./src/images/mocha.png"
         },
         {
-            "nome": "Café Gelado",
-            "preco": "7.00",
-            "descricao": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
-            "imagem": "../images/cafe-gelado.png"
+            "name": "Café Gelado",
+            "price": "7.00",
+            "description": "Café expresso resfriado com gelo, perfeito para os dias mais quentes.",
+            "image": "./src/images/cafe-gelado.png"
         },
         {
-            "nome": "Café Coado Especial (Método V60)",
-            "preco": "15.00",
-            "descricao": "Café coado artesanalmente com grãos selecionados de alta qualidade, proporcionando notas complexas e suaves ao paladar.",
-            "imagem": "../images/cafe-v60.png"
+            "name": "Café Coado Especial (Método V60)",
+            "price": "15.00",
+            "description": "Café coado artesanalmente com grãos selecionados de alta qualidade, proporcionando notas complexas e suaves ao paladar.",
+            "image": "./src/images/cafe-v60.png"
         },
         {
-            "nome": "Flat White",
-            "preco": "12.00",
-            "descricao": "Bebida refinada de origem australiana, com uma camada fina de leite vaporizado sobre uma dose dupla de café expresso.",
-            "imagem": "../images/flat-white.png"
+            "name": "Flat White",
+            "price": "12.00",
+            "description": "Bebida refinada de origem australiana, com uma camada fina de leite vaporizado sobre uma dose dupla de café expresso.",
+            "image": "./src/images/flat-white.png"
         },
         {
-            "nome": "Affogato",
-            "preco": "18.00",
-            "descricao": "Sofisticada bebida que combina uma bola de sorvete de baunilha com uma dose de café expresso quente.",
-            "imagem": "../images/affogato.png"
+            "name": "Affogato",
+            "price": "18.00",
+            "description": "Sofisticada bebida que combina uma bola de sorvete de baunilha com uma dose de café expresso quente.",
+            "image": "./src/images/affogato.png"
         },
         {
-            "nome": "Cold Brew com Leite de Amêndoas",
-            "preco": "16.00",
-            "descricao": "Café preparado a frio por 24 horas, servido com gelo e leite de amêndoas, oferecendo um sabor suave e menos ácido.",
-            "imagem": "../images/cold-brew.png"
+            "name": "Cold Brew com Leite de Amêndoas",
+            "price": "16.00",
+            "description": "Café preparado a frio por 24 horas, servido com gelo e leite de amêndoas, oferecendo um sabor suave e menos ácido.",
+            "image": "./src/images/cold-brew.png"
         },
         {
-            "nome": "Café com Laranja e Especiarias",
-            "preco": "17.00",
-            "descricao": "Café expresso combinado com suco de laranja fresco e um toque de especiarias, criando uma experiência exótica e refrescante.",
-            "imagem": "../images/cafe-com-laranja.png"
+            "name": "Café com Laranja e Especiarias",
+            "price": "17.00",
+            "description": "Café expresso combinado com suco de laranja fresco e um toque de especiarias, criando uma experiência exótica e refrescante.",
+            "image": "./src/images/cafe-com-laranja.png"
         }
     ],
-    "lanches": [
+    "snacks": [
         {
-            "nome": "Pão de Queijo",
-            "preco": "4.50",
-            "descricao": "Tradicional pão de queijo brasileiro, crocante por fora e macio por dentro.",
-            "imagem": "../images/pao-de-queijo.png"
+            "name": "Pão de Queijo",
+            "price": "4.50",
+            "description": "Tradicional pão de queijo brasileiro, crocante por fora e macio por dentro.",
+            "image": "./src/images/pao-de-queijo.png"
         },
         {
-            "nome": "Croissant",
-            "preco": "8.50",
-            "descricao": "Massa folhada leve e crocante, ideal para acompanhar seu café.",
-            "imagem": "../images/croissant.png"
+            "name": "Croissant",
+            "price": "8.50",
+            "description": "Massa folhada leve e crocante, ideal para acompanhar seu café.",
+            "image": "./src/images/croissant.png"
         },
         {
-            "nome": "Sanduíche Natural",
-            "preco": "12.00",
-            "descricao": "Sanduíche leve com frango desfiado, alface, tomate, cenoura ralada e uma pitada de maionese, servido no pão integral.",
-            "imagem": "../images/sanduiche-natural.png"
+            "name": "Sanduíche Natural",
+            "price": "12.00",
+            "description": "Sanduíche leve com frango desfiado, alface, tomate, cenoura ralada e uma pitada de maionese, servido no pão integral.",
+            "image": "./src/images/sanduiche-natural.png"
         },
         {
-            "nome": "Croissant com Amêndoas",
-            "preco": "14.00",
-            "descricao": "Massa folhada francesa recheada com creme de amêndoas e coberta com lâminas de amêndoas tostadas, uma verdadeira iguaria parisiense.",
-            "imagem": "../images/croissant-amendoas.png"
+            "name": "Croissant com Amêndoas",
+            "price": "14.00",
+            "description": "Massa folhada francesa recheada com creme de amêndoas e coberta com lâminas de amêndoas tostadas, uma verdadeira iguaria parisiense.",
+            "image": "./src/images/croissant-amendoas.png"
         },
         {
-            "nome": "Toast de Abacate com Ovo Poché",
-            "preco": "20.00",
-            "descricao": "Pão artesanal tostado, coberto com purê de abacate temperado e ovo poché, finalizado com pimenta-do-reino e azeite trufado.",
-            "imagem": "../images/avocado-toast.png"
+            "name": "Toast de Abacate com Ovo Poché",
+            "price": "20.00",
+            "description": "Pão artesanal tostado, coberto com purê de abacate temperado e ovo poché, finalizado com pimenta-do-reino e azeite trufado.",
+            "image": "./src/images/avocado-toast.png"
         },
         {
-            "nome": "Sanduíche de Salmão Defumado",
-            "preco": "24.00",
-            "descricao": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
-            "imagem": "../images/sanduiche-de-salmao.png"
+            "name": "Sanduíche de Salmão Defumado",
+            "price": "24.00",
+            "description": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
+            "image": "./src/images/sanduiche-de-salmao.png"
         }
     ],
-    "sobremesas": [
+    "desserts": [
         {
-            "nome": "Bolo de Cenoura com Cobertura de Chocolate (fatia)",
-            "preco": "6.00",
-            "descricao": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
-            "imagem": "../images/bolo-de-cenoura.png"
+            "name": "Bolo de Cenoura com Cobertura de Chocolate (fatia)",
+            "price": "6.00",
+            "description": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
+            "image": "./src/images/bolo-de-cenoura.png"
         },
         {
-            "nome": "Cheesecake de Frutas Vermelhas",
-            "preco": "12.00",
-            "descricao": "Delicada torta de queijo com uma calda de frutas vermelhas.",
-            "imagem": "../images/cheesecake-frutas-vermelhas.png"
+            "name": "Cheesecake de Frutas Vermelhas",
+            "price": "12.00",
+            "description": "Delicada torta de queijo com uma calda de frutas vermelhas.",
+            "image": "./src/images/cheesecake-frutas-vermelhas.png"
         },
         {
-            "nome": "Brownie de Chocolate",
-            "preco": "7.00",
-            "descricao": "Brownie denso e saboroso com pedaços de chocolate, crocante por fora e macio por dentro.",
-            "imagem": "../images/brownie-chocolate.png"
+            "name": "Brownie de Chocolate",
+            "price": "7.00",
+            "description": "Brownie denso e saboroso com pedaços de chocolate, crocante por fora e macio por dentro.",
+            "image": "./src/images/brownie-chocolate.png"
         },
         {
-            "nome": "Brownie de Café",
-            "preco": "9.00",
-            "descricao": "Versão alternativa do brownie tradicional.",
-            "imagem": "../images/brownie-cafe.png"
+            "name": "Brownie de Café",
+            "price": "9.00",
+            "description": "Versão alternativa do brownie tradicional.",
+            "image": "./src/images/brownie-cafe.png"
         },
         {
-            "nome": "Brigadeiro Tradicional (unidade)",
-            "preco": "2.50",
-            "descricao": "O famoso e tão amado brigadeiro.",
-            "imagem": "../images/brigadeiro-tradicional.png"
+            "name": "Brigadeiro Tradicional (unidade)",
+            "price": "2.50",
+            "description": "O famoso e tão amado brigadeiro.",
+            "image": "./src/images/brigadeiro-tradicional.png"
         },
         {
-            "nome": "Brigadeiro Gourmet (unidade)",
-            "preco": "4.00",
-            "descricao": "Doce de leite condensado e chocolate belga, uma versão mais sofisticada do tradicional brigadeiro brasileiro.",
-            "imagem": "../images/brigadeiro-gourmet.png"
+            "name": "Brigadeiro Gourmet (unidade)",
+            "price": "4.00",
+            "description": "Doce de leite condensado e chocolate belga, uma versão mais sofisticada do tradicional brigadeiro brasileiro.",
+            "image": "./src/images/brigadeiro-gourmet.png"
         },
         {
-            "nome": "Mousse de Chocolate Belga 70%",
-            "preco": "20.00",
-            "descricao": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
-            "imagem": "../images/mousse-chocolate-belga.png"
+            "name": "Mousse de Chocolate Belga 70%",
+            "price": "20.00",
+            "description": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
+            "image": "./src/images/mousse-chocolate-belga.png"
         },
         {
-            "nome": "Profiteroles com Sorvete de Baunilha e Calda de Chocolate Amargo",
-            "preco": "25.00",
-            "descricao": "Massa choux recheada com sorvete de baunilha, coberta com uma generosa calda quente de chocolate amargo.",
-            "imagem": "../images/profilitores.png"
+            "name": "Profiteroles com Sorvete de Baunilha e Calda de Chocolate Amargo",
+            "price": "25.00",
+            "description": "Massa choux recheada com sorvete de baunilha, coberta com uma generosa calda quente de chocolate amargo.",
+            "image": "./src/images/profilitores.png"
         }
     ]
 }
