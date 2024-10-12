@@ -177,7 +177,7 @@
 .product {
     flex-direction: column;
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     padding: 1rem .5rem;
     background-color: hsl( var(--clr-white) / .1);
 }

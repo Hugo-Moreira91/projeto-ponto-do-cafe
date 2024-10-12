@@ -42,10 +42,12 @@
     grid-area: section-crew;
 }
 
-/* .grid-container--products {
-    grid-template-columns: minmax(0, 1fr) repeat(auto-fit, minmax(0, auto-fill)) minmax(0, 1fr);
+.grid-container--products {
+    --gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: min-content;
-} */
+    /* justify-items: center; */
+}
 
 .grid-container--recipes {
     --gap: 1.5rem;
