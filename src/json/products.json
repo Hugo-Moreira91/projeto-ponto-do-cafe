@@ -23,6 +23,30 @@
             "price": "20.00",
             "description": "Mousse de chocolate belga, rico e aveludado, decorado com raspas de chocolate e um toque de flor de sal para realçar os sabores.",
             "image": "./src/images/mousse-chocolate-belga.png"
+        },
+        {
+            "name": "Coxinha de Frango com Catupiry",
+            "price": "9.50",
+            "description": "A tradicional coxinha de frango com o toque especial de catupiry.",
+            "image": "./src/images/coxinha-frango-catupiry.png"
+        },
+        {
+            "name": "Brigadeiro Tradicional",
+            "price": "2.50",
+            "description": "(Unidade) O famoso e tão amado brigadeiro.",
+            "image": "./src/images/brigadeiro-tradicional.png"
+        },
+        {
+            "name": "Profiteroles com Sorvete e Calda",
+            "price": "25.00",
+            "description": "Massa choux recheada com sorvete de baunilha, coberta com uma generosa calda quente de chocolate amargo.",
+            "image": "./src/images/profilitores.png"
+        },
+        {
+            "name": "Mousse de Maracujá",
+            "price": "11.00",
+            "description": "Mousse leve e refrescante de maracujá, ideal para quem quer algo doce e azedinho.",
+            "image": "./src/images/mousse-maracuja.png"
         }
     ],
     "drinks": [
@@ -85,14 +109,50 @@
             "price": "17.00",
             "description": "Café expresso combinado com suco de laranja fresco e um toque de especiarias, criando uma experiência exótica e refrescante.",
             "image": "./src/images/cafe-com-laranja.png"
+        },
+        {
+            "name": "Frapê de Avelã com Chantilly",
+            "price": "19.00",
+            "description": "Bebida gelada à base de café, leite e xarope de avelã, finalizada com chantilly.",
+            "image": "./src/images/frape-avela.png"
+        },
+        {
+            "name": "Café Latte com Amêndoas",
+            "price": "12.50",
+            "description": "Café espresso com leite vaporizado e uma suave essência de amêndoas.",
+            "image": "./src/images/cafe-com-amendoas.png"
+        },
+        {
+            "name": "Café Macchiato Caramelizado",
+            "price": "13.00",
+            "description": "Espresso coberto com espuma de leite e um leve toque de caramelo.",
+            "image": "./src/images/cafe-macchiato-caramelizado.png"
+        },
+        {
+            "name": "Café Tônica",
+            "price": "12.50",
+            "description": "Uma mistura refrescante de espresso e água tônica, para uma experiência inusitada e sofisticada.",
+            "image": "./src/images/espresso-tonica.png"
+        },
+        {
+            "name": "Chocolate Quente Belga",
+            "price": "18.00",
+            "description": "Chocolate quente cremoso feito com chocolate belga, ideal para dias frios.",
+            "image": "./src/images/chocolate-quente-belga.png"
         }
     ],
     "snacks": [
         {
             "name": "Pão de Queijo",
             "price": "4.50",
-            "description": "Tradicional pão de queijo brasileiro, crocante por fora e macio por dentro.",
+            "description": "(Unidade) Tradicional pão de queijo brasileiro, crocante por fora e macio por dentro.",
             "image": "./src/images/pao-de-queijo.png"
+        },
+        {
+            "name": "Pão de Queijo com Requeijão",
+            "price": "6.50",
+            "description": "(Unidade) Clássico pão de queijo brasileiro, com recheio cremoso de catupiry.",
+            "image": "./src/images/pao-de-queijo-com-requeijao.png"
         },
         {
             "name": "Croissant",
@@ -101,10 +161,28 @@
             "image": "./src/images/croissant.png"
         },
         {
+            "name": "Croissant com Chocolate",
+            "price": "11.00",
+            "description": "Croissant folhado e recheado com creme de chocolate, ideal para um lanche rápido.",
+            "image": "./src/images/croissant-chocolate.png"
+        },
+        {
             "name": "Sanduíche Natural",
             "price": "12.00",
             "description": "Sanduíche leve com frango desfiado, alface, tomate, cenoura ralada e uma pitada de maionese, servido no pão integral.",
             "image": "./src/images/sanduiche-natural.png"
+        },
+        {
+            "name": "Coxinha de Frango",
+            "price": "7.50",
+            "description": "(Unidade) Tradicional coxinha de frango com massa crocante por fora e recheio suculento por dentro.",
+            "image": "./src/images/coxinha-frango.png"
+        },
+        {
+            "name": "Coxinha de Frango com Catupiry",
+            "price": "9.50",
+            "description": "(Unidade) A tradicional coxinha de frango com o toque especial de catupiry.",
+            "image": "./src/images/coxinha-frango-catupiry.png"
         },
         {
             "name": "Croissant com Amêndoas",
@@ -123,13 +201,19 @@
             "price": "24.00",
             "description": "Pão de fermentação natural recheado com fatias de salmão defumado, cream cheese, alcaparras e rúcula fresca.",
             "image": "./src/images/sanduiche-de-salmao.png"
+        },
+        {
+            "name": "Sanduíche Gourmet",
+            "price": "18.00",
+            "description": "Sanduíche gourmet com presunto parma, queijo brie e rúcula.",
+            "image": "./src/images/sanduiche-presunto-parma-queijo-brie.png"
         }
     ],
     "desserts": [
         {
-            "name": "Bolo de Cenoura com Cobertura de Chocolate (fatia)",
+            "name": "Bolo de Cenoura com Cobertura de Chocolate",
             "price": "6.00",
-            "description": "Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
+            "description": "(Fatia) Bolo macio de cenoura com uma irresistível cobertura de chocolate.",
             "image": "./src/images/bolo-de-cenoura.png"
         },
         {
@@ -151,15 +235,15 @@
             "image": "./src/images/brownie-cafe.png"
         },
         {
-            "name": "Brigadeiro Tradicional (unidade)",
+            "name": "Brigadeiro Tradicional",
             "price": "2.50",
-            "description": "O famoso e tão amado brigadeiro.",
+            "description": "(Unidade) O famoso e tão amado brigadeiro.",
             "image": "./src/images/brigadeiro-tradicional.png"
         },
         {
-            "name": "Brigadeiro Gourmet (unidade)",
+            "name": "Brigadeiro Gourmet",
             "price": "4.00",
-            "description": "Doce de leite condensado e chocolate belga, uma versão mais sofisticada do tradicional brigadeiro brasileiro.",
+            "description": "(Unidade) Doce de leite condensado e chocolate belga, uma versão mais sofisticada do tradicional brigadeiro brasileiro.",
             "image": "./src/images/brigadeiro-gourmet.png"
         },
         {
@@ -169,10 +253,22 @@
             "image": "./src/images/mousse-chocolate-belga.png"
         },
         {
-            "name": "Profiteroles com Sorvete de Baunilha e Calda de Chocolate Amargo",
+            "name": "Mousse de Maracujá",
+            "price": "11.00",
+            "description": "Mousse leve e refrescante de maracujá, ideal para quem quer algo doce e azedinho.",
+            "image": "./src/images/mousse-maracuja.png"
+        },
+        {
+            "name": "Profiteroles com Sorvete e Calda",
             "price": "25.00",
             "description": "Massa choux recheada com sorvete de baunilha, coberta com uma generosa calda quente de chocolate amargo.",
             "image": "./src/images/profilitores.png"
+        },
+        {
+            "name": "Petit Gateau",
+            "price": "17.50",
+            "description": "Bolinho de chocolate com recheio de chocolate cremoso, acompanhado de sorvete de creme.",
+            "image": "./src/images/petit-gateau.png"
         }
     ]
 }

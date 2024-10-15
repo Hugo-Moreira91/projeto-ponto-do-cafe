@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
     buttons.forEach(button => {
         button.addEventListener('click', (e)=> {
             const category = e.target.getAttribute('data-category');
+            const navContainer = e.target.parentNode;
+
+            navContainer.querySelector('.submenu-active').classList.remove('submenu-active');
+            e.target.classList.add('submenu-active');  
             loadingProducts(category);
         });
     })
@@ -28,13 +32,14 @@ async function loadingProducts(category) {
 
     try{
         categoryProducts.forEach(product => {
+            const priceConverted = product.price.replace('.', ',');
             const productRender = `
                 <div class="flex product">
-                    <h2 class="ff-sans-cond fs-700 product-name">${product.name}</h2>
+                    <h2 class="flex ff-sans-cond fs-600 product-name">${product.name}</h2>
                     <img class="product-image" src="${product.image}" alt="${product.name}">
-                    <p class="product-description"><i>${product.description}</i></p>
-                    <p class="product-price">R$ ${product.price.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</p>
-                    <button class="btn uppercase btn-shop-cart">Adicionar ao carrinho</button>
+                    <p class="fs-300 product-description"><i>${product.description}</i></p>
+                    <p class="fs-500 letter-spacing-1 product-price">R$ ${priceConverted}</p>
+                    <button class="btn fs-300 uppercase btn-shop-cart">Adicionar ao carrinho</button>
                 </div>
             `
 

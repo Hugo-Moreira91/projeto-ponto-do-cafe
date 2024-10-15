@@ -46,7 +46,7 @@
     --gap: .5rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: min-content;
-    /* justify-items: center; */
+    justify-items: center;
 }
 
 .grid-container--recipes {
@@ -137,6 +137,11 @@
 
     .grid-container--about{
         grid-template-columns: minmax(0, 1fr) minmax(0, 35rem) minmax(0, 1fr);
+    }
+
+    .products-list {
+        max-width: 80vw;
+        margin: 0 auto;
     }
 
     .grid-container--login {
