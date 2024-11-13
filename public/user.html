@@ -20,6 +20,7 @@
     <title>Ponto do Café - Contato</title>
 
     <script src="./src/js/navigation.js" defer></script>
+    <script src="./src/js/form.js" defer></script>
 </head>
 <body class="home">
     <a class="skip-to-content" href="#main">Ir para o conteúdo principal</a>
@@ -58,21 +59,21 @@
         <section class="new-user-container">
             <p class="ff-sans-normal fs-400">Não possui cadastro?<br>Preencha abaixo com seus dados para criá-lo.</p>
 
-            <form id="new-user-form" class="ff-sans-cond fs-500 contact-form" action="http://localhost:3000/cadastro_usuarios" method="post" autocomplete="on">
-                <label for="new-user-full-name">Nome Completo *</label>
-                <input type="text" name="full-name" id="full-name" placeholder="Nome completo" required>
-                <label for="new-user-email">E-mail *</label>
-                <input type="email" name="new-user-email" id="new-user-email" placeholder="E-mail" required>
-                <label for="new-user-address">Endereço *</label>
-                <input type="text" name="new-user-address" id="new-user-address" placeholder="Rua/Avenida/Logradouro" required>
-                <label for="new-user-number">Número *</label>
-                <input type="text" name="new-user-number" id="new-user-number" placeholder="Número" pattern="\d+" title="Somente números são permitidos" required>
-                <label for="new-user-neighborhood">Bairro *</label>
-                <input type="text" name="new-user-neighborhood" id="new-user-neighborhood" placeholder="Bairro" required>
-                <label for="new-user-city">Cidade *</label>
-                <input type="text" name="new-user-city" id="new-user-city" placeholder="Cidade" required>
-                <label for="new-user-state">Estado/Distrito *</label>
-                <select name="new-user-state" id="new-user-state" required>
+            <form id="new-user-form" class="ff-sans-cond fs-500 contact-form" method="post" autocomplete="on">
+                <label for="name">Nome Completo *</label>
+                <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                <label for="email">E-mail *</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <label for="address">Endereço *</label>
+                <input type="text" name="address" id="address" placeholder="Rua/Avenida/Logradouro" required>
+                <label for="number">Número *</label>
+                <input type="text" name="number" id="number" placeholder="Número" pattern="\d+" title="Somente números são permitidos" required>
+                <label for="neighborhood">Bairro *</label>
+                <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro" required>
+                <label for="city">Cidade *</label>
+                <input type="text" name="city" id="city" placeholder="Cidade" required>
+                <label for="state">Estado/Distrito *</label>
+                <select name="state" id="state" required>
                     <option value="" disabled selected>Selecione o estado/distrito</option>
                     <optgroup label="Norte">
                         <option value="AC">Acre</option>
@@ -116,10 +117,10 @@
                         <option value="SC">Santa Catarina</option>
                       </optgroup>
                 </select>
-                <label for="new-user-name">Nome de usuário *</label>
-                <input type="text" name="new-user-name" id="new-user-name" placeholder="Nome de usuário" required>
-                <label for="new-user-password">Senha *</label>
-                <input type="password" name="new-user-password" id="new-user-password" placeholder="Senha" minlength="5" required>
+                <label for="username">Nome de usuário *</label>
+                <input type="text" name="username" id="username" placeholder="Nome de usuário" required>
+                <label for="newpassword">Senha *</label>
+                <input type="password" name="newpassword" id="newpassword" placeholder="Senha" minlength="5" required>
                 <p class="ff-sans-cond fs-300">(Mín: 5 caracteres)</p>
                 <p class="fs-400"><i>* Campos obrigatórios</i></p>
                 <button type="submit" class="btn uppercase">Cadastrar</button>
