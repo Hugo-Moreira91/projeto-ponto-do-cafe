@@ -1,10 +1,14 @@
 function addToCart(productId) {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    if (!cart.includes(productId)) {
-        cart.push(productId);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        alert("Produto adicionado ao carrinho!");
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const itemIndex = cartItems.findIndex(item => item.id === productId);
+
+    if (itemIndex > -1) {
+        cartItems[itemIndex].quantity += 1; 
+        alert("Incrementando a quantidade do produto adicionado ao carrinho!");
     } else {
-        alert("Este produto já está no carrinho!");
+        cartItems.push({ id: productId, quantity: 1 });
+        alert("Produto adicionado ao carrinho!");
     }
+
+    localStorage.setItem('cart', JSON.stringify(cartItems));
 }

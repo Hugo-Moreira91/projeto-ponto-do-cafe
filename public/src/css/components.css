@@ -354,6 +354,7 @@
 }
 
 .cart-item {
+    gap: .75rem;
     height: 6rem;
 }
 
@@ -369,6 +370,43 @@
 
 .cart-item-name {
     width: 5rem;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.quantity-control {
+    gap: .5rem;
+}
+
+.btn-quantity {
+    padding: 0 .3rem;
+    cursor: pointer;
+}
+
+.btn-remove-item {
+    max-width: 3.5rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: .2rem;
+    background-color: hsl( var(--clr-gold) / .85);
+    color: hsl( var(--clr-dark) / 1);
+    transition: 250ms ease-in;
+}
+
+.btn-remove-item:hover,
+.btn-remove-item:focus {
+    background-color: hsl( var(--clr-brown) / .85);
+    color: hsl( var(--clr-white) / 1);
+}
+
+.cart-total-container {
+    padding-top: 1rem;
+    border-top: .1rem dotted hsl( var(--clr-white) / 1);
+}
+
+.btn.btn-finalize-purchase {
+    max-width: 10rem;
 }
 
 .footer {
@@ -490,8 +528,21 @@
         max-width: 12.5rem;
     }
 
+    .cart-item,
+    .quantity-control {
+        gap: 1rem;
+    }
+
     .cart-item-name {
         width: 15rem;
+    }
+
+    .btn-remove-item {
+        max-width: 4rem;
+    }
+
+    .btn.btn-finalize-purchase {
+        max-width: 12rem;
     }
 
     .return-link {
