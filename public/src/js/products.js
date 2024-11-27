@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             e.target.classList.add('submenu-active');  
             loadingProducts(category);
         });
-    })
+    });
 });
 
 async function dataProducts() {
@@ -39,7 +39,7 @@ async function loadingProducts(category) {
                     <img class="product-image" src="${product.image}" alt="${product.name}">
                     <p class="fs-300 product-description"><i>${product.description}</i></p>
                     <p class="fs-500 letter-spacing-1 product-price">R$ ${priceConverted}</p>
-                    <button class="btn fs-300 uppercase btn-shop-cart">Adicionar ao carrinho</button>
+                    <button class="btn fs-300 uppercase btn-shop-cart" onclick="addToCart('${product.id}')">Adicionar ao carrinho</button>
                 </div>
             `
 

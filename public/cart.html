@@ -17,11 +17,10 @@
     <link rel="stylesheet" href="./src/css/layout.css">
     <link rel="stylesheet" href="./src/css/page-specific-bg.css">
 
-    <title>Ponto do Café - Contato</title>
+    <title>Ponto do Café - Carrinho</title>
 
     <script src="./src/js/navigation.js" defer></script>
-    <script src="./src/js/products.js" defer></script>
-    <script src="./src/js/addCart.js" defer></script>
+    <script src="./src/js/loadCart.js" defer></script>
 </head>
 <body class="home">
     <a class="skip-to-content" href="#main">Ir para o conteúdo principal</a>
@@ -39,7 +38,7 @@
             <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">Home</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="about.html">Sobre</a></li>
-                <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="products.html">Produtos</a></li>
+                <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="products.html">Produtos</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="recipes.html">Receitas</a></li>
                 <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">Contato</a></li>
                 <li>
@@ -47,7 +46,7 @@
                         <img class="user" src="https://img.icons8.com/external-febrian-hidayat-glyph-febrian-hidayat/ffffff/external-user-user-interface-febrian-hidayat-glyph-febrian-hidayat.png" alt="Usuário"/>
                     </a>
                 </li>
-                <li>
+                <li class="active-icon">
                     <a href="cart.html">
                         <img class="shop-cart" src="https://img.icons8.com/glyph-neue/ffffff/shopping-cart.png" alt="Carrinho de compras">
                     </a>
@@ -56,15 +55,9 @@
         </nav>
     </header>
 
-    <main class="grid-container">
-        <nav class="submenu submenu-underline-indicators">
-            <button class="ff-sans-cond fs-500 uppercase submenu-active" data-category="highlights">Destaques</button>
-            <button class="ff-sans-cond fs-500 uppercase" data-category="drinks">Bebidas</button>
-            <button class="ff-sans-cond fs-500 uppercase" data-category="snacks">Lanches</button>
-            <button class="ff-sans-cond fs-500 uppercase" data-category="desserts">Sobremesas</button>
-        </nav>
-
-        <div id="products" class="products-list grid grid-container--products"></div>
+    <main class="grid-container grid-container--cart">
+        <h1 class="ff-handwriting fs-700">Seu carrinho</h1>
+        <div id="cart-container" class="cart-container"></div>
     </main>
 
     <footer class="flex footer">

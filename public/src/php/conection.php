@@ -13,9 +13,4 @@ $dbName = $_ENV['DB_NAME'];
 
 $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
-if ($conn->connect_error) {
-    die("Erro na conexão: " . $conn->connect_error);
-}
-echo "Conexão bem-sucedida!";
-
 ?>

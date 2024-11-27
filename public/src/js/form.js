@@ -5,13 +5,13 @@ form.addEventListener("submit", function (event) {
 
     const formData = new FormData(form);
 
-    fetch("cadastro.php", {
+    fetch("/php/process_registration.php", {
         method: "POST",
         body: formData,
     })
         .then((response) => response.text())
-        .then((data) => {
-            formulario.reset(); 
+        .then(() => {
+            form.reset(); 
         })
         .catch((error) => {
             console.error("Erro:", error);

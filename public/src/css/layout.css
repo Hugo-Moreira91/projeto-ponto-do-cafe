@@ -109,10 +109,31 @@
     flex-direction: column;
 }
 
+.grid-container--cart {
+    grid-template-columns: minmax(0, 20rem);
+    grid-template-rows: min-content;
+    row-gap: 1rem;
+    grid-template-areas: 
+        'title'
+        'cart-item-container';
+}
+
+.grid-container--cart > h1 {
+    grid-area: title;
+}
+
+.grid-container--cart > .cart-container {
+    grid-area: cart-item-container;
+}
+
 @media(min-width: 35rem){
     .grid-container {
         padding-inline: 2rem;
         padding-top: 7.715rem;
+    }
+
+    .grid-container--cart {
+        grid-template-columns: minmax(0, 30rem);
     }
 }
 

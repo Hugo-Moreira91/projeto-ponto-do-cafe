@@ -349,6 +349,28 @@
     margin-bottom: 1rem;
 }
 
+.grid-container--cart > h1 {
+    margin: 2rem 0;
+}
+
+.cart-item {
+    height: 6rem;
+}
+
+.cart-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.cart-item-img {
+    width: 5rem;
+    height: 5rem;
+    border: .15rem solid hsl( var(--clr-gold) / .5);
+}
+
+.cart-item-name {
+    width: 5rem;
+}
+
 .footer {
     width: 100%;
     min-height: 8rem;
@@ -466,6 +488,19 @@
 
     .contact-form > button {
         max-width: 12.5rem;
+    }
+
+    .cart-item-name {
+        width: 15rem;
+    }
+
+    .return-link {
+        text-decoration: underline;
+        color: hsl( var(--clr-white) / 1);
+    }
+
+    .return-link:hover {
+        text-decoration: none;
     }
 
     .footer {
