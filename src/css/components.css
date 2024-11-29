@@ -405,6 +405,15 @@
     border-top: .1rem dotted hsl( var(--clr-white) / 1);
 }
 
+.return-link {
+    text-decoration: underline;
+    color: hsl( var(--clr-white) / 1);
+}
+
+.return-link:hover {
+    text-decoration: none;
+}
+
 .btn.btn-finalize-purchase {
     max-width: 10rem;
 }
@@ -543,15 +552,6 @@
 
     .btn.btn-finalize-purchase {
         max-width: 12rem;
-    }
-
-    .return-link {
-        text-decoration: underline;
-        color: hsl( var(--clr-white) / 1);
-    }
-
-    .return-link:hover {
-        text-decoration: none;
     }
 
     .footer {
